@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Busca</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #fff;
+    color: #202124;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ======== LOGO ESTILO GOOGLE ======== */
+  .logo {
+    font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 92px;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    line-height: 1;
+    text-align: center;
+  }
+  .logo span { display: inline-block; vertical-align: top; }
+  .logo .g  { color: #4285F4; }  /* azul */
+  .logo .o1 { color: #EA4335; }  /* vermelho */
+  .logo .o2 { color: #FBBC05; }  /* amarelo */
+  .logo .g2 { color: #4285F4; }  /* azul */
+  .logo .l  { color: #34A853; }  /* verde */
+  .logo .e  { color: #EA4335; }  /* vermelho */
+  /* ==================================== */
+
+  form {
+    width: 90%;
+    max-width: 560px;
+  }
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 8px 14px;
+    box-shadow: none;
+    transition: box-shadow 0.2s;
+  }
+  .search-box:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  }
+  input[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .btn {
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #3c4043;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }
+  footer {
+    background: #f2f2f2;
+    color: #70757a;
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+  footer a {
+    color: #70757a;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  nav a {
+    color: #202124;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 16px;
+  }
+  nav a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <!-- Cabeçalho (opcional) -->
+  <nav>
+    <a href="https://www.google.com/imghp" target="_blank">Imagens</a>
+    <a href="https://www.google.com/videohp" target="_blank">Vídeos</a>
+    <a href="https://www.google.com/advanced_search" target="_blank">Pesquisa avançada</a>
+  </nav>
+
+  <main>
+    <!-- LOGO colorido -->
+    <div class="logo" aria-label="Google">
+      <span class="g">G</span>
+      <span class="o1">o</span>
+      <span class="o2">o</span>
+      <span class="g2">g</span>
+      <span class="l">l</span>
+      <span class="e">e</span>
+    </div>
+
+    <!-- FORM principal -->
+    <form action="https://www.google.com/search" method="GET">
+      <div class="search-box">
+        <input type="search" name="q" placeholder="Pesquise no Google..." required>
+      </div>
+  <div class="buttons">
+    <input class="btn" type="submit" value="Pesquisa Google">
+    <input class="btn" type="submit" formaction="https://www.google.com/search?btnI=1" value="Estou com sorte">
+  </div>
+</form>
+
+  </main>
+
+  <footer>
+    <div style="text-align:center;">
+      <a href="https://www.google.com/preferences" target="_blank">Configurações</a> |
+      <a href="https://www.google.com/advanced_search" target="_blank">Pesquisa Avançada</a> |
+      <a href="https://www.google.com/imghp" target="_blank">Imagens</a> |
+      <a href="https://www.google.com/videohp" target="_blank">Vídeos</a>
+    </div>
+  </footer>
+
+</body>
+</html>
